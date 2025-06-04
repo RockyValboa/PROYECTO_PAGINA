@@ -48,19 +48,29 @@ body {
 }
 
 main {
-  width: 80%;
+  display: flex;
+  width: 100%;
   background-color: #ffbcf7;
   padding: 1rem;
-  overflow-y: auto;
+  gap: 1rem;
 
-  & .izquierda {
+  .izquierda {
     width: 20%;
     background-color: #ffbcf7;
     text-align: center;
     padding: 1rem;
   }
-  /* & .derecha {
-  } */
+  .derecha {
+    width: 20%;
+    background-color: #ffbcf7;
+    text-align: center;
+    padding: 1rem;
+  }
+  .centro {
+    width: 60%;
+    background-color: white;
+    padding: 1rem;
+  }
 }
 
 .bonito {
