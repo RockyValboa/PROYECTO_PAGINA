@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+:root {
+  --altura-nav: 4rem;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  display: flex;
+  height: calc(100);
+  margin: 0;
+  font-family: "Shantell Sans" !important;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--altura-header);
+  background-color: #db61ca;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  z-index: 1000;
+}
+
+.nav {
+  position: fixed;
+  top: var(--altura-header);
+  left: 0;
+  width: 100%;
+  height: var(--altura-nav);
+  background-color: #ffbcf7;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+  z-index: 900;
+}
+
+.layout {
+  display: flex;
+  margin-top: calc(var(--altura-header) + var(--altura-nav));
+  height: calc(100vh - var(--altura-header) - var(--altura-nav));
+}
+
+main {
+  width: 80%;
+  background-color: #ffbcf7;
+  padding: 1rem;
+  overflow-y: auto;
+
+  & .izquierda {
+    width: 20%;
+    background-color: #ffbcf7;
+    text-align: center;
+    padding: 1rem;
+  }
+  /* & .derecha {
+  } */
+}
+
+.bonito {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
