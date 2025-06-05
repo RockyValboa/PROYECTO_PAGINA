@@ -63,18 +63,29 @@ main {
     text-align: center;
     padding: 1rem;
   }
-  .derecha {
+  /* .derecha {
     width: 20%;
-    background-color: #ffbcf7;
+    background-color: white;
     text-align: center;
     padding: 1rem;
-  }
+    border-radius: 50%;
+  } */
   .centro {
     display: flex;
     justify-content: center;
     width: 60%;
     background-color: #ffbcf7;
     padding: 1rem;
+  }
+}
+aside {
+  width: 20%;
+  background-color: #ffbcf7;
+  text-align: center;
+  padding: 1rem;
+  & .magic {
+    border-radius: 1%;
+    background-color: white;
   }
 }
 
